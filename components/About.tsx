@@ -12,9 +12,9 @@ export default function About() {
                         <img className='rounded-t-xl rounded-b-xl w-[500px]' src="g8-1.png" alt="" />
                     </article>
 
-                    <article className='px-12 lg:w-1/2'>
+                    <article className='lg:px-12 lg:w-1/2'>
                         <h2 className='font-bold text-xl uppercase tracking-wider'>Sobre nós</h2>
-                        <h1 className='font-bold text-3xl mt-2 max-w-[90%]'>Aqui, cada história é valorizada com amor e respeito.</h1>
+                        <h1 className='font-bold  text-3xl mt-2 max-w-[90%]'>Aqui, cada história é valorizada com amor e respeito.</h1>
                         <p className='mt-4 max-w-[90%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum voluptatem quas nam voluptatum unde libero sunt, laudantium harum, quibusdam aliquid? Minima eius, doloribus obcaecati accusamus aspernatur unde ex quos?</p>
 
                         <div className='flex mt-8 gap-6 items-center'>

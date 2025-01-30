@@ -38,8 +38,23 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(193, 255, 248, .8)); /* Verde com transparência */
-  /* z-index: 1; */
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(193, 255, 248, 1));
 }
+
+.missionBG {
+  position: relative;
+  background-image: url('/missaoBG.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.missionBG::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 88, 128, 0.5);
+
+}
+
 
 
