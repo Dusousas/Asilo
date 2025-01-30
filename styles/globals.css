@@ -7,21 +7,39 @@ body {
   font-family: "Quicksand", serif;
 }
 
-.maxW{
+.maxW {
   max-width: 1520px;
   margin: 0 auto;
   padding: 0 2%;
 }
 
-h2{
+h2 {
   color: #ED315D;
 }
 
-h1{
+h1 {
   color: #1E6091;
 }
 
-.gradient{
+.gradient {
   background: linear-gradient(to bottom, #FFFFFF 0%, #C1FFF8 100%);
-
+  z-index: 9;
 }
+
+.serviceBG {
+  position: relative;
+  background-image: url('/serviceBG1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.serviceBG::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(193, 255, 248, .8)); /* Verde com transparência */
+  /* z-index: 1; */
+}
+
+

@@ -13,7 +13,7 @@ export default function About2() {
             <p className='text-white mt-4 text-center lg:text-left lg:max-w-[80%]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nihil deserunt vel labore accusantium eligendi facilis obcaecati dolore porro expedita, possimus ipsam, adipisci, nisi voluptatibus at aperiam mollitia? Nobis, quibusdam.</p>
 
             <div className='bg-white flex gap-4 items-center px-6 py-4 rounded-xl mt-6 lg:max-w-[50%] '>
-              <img src="Group-12.png" alt="" />
+              <img className='w-[10%]' src="Group-12.png" alt="" />
               <div>
                 <h2 className='text-2xl font-bold'>Enfermeiros de Excelência</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, totam.</p>
@@ -21,7 +21,7 @@ export default function About2() {
             </div>
 
             <div className='bg-white flex gap-4 items-center px-6 py-4 rounded-xl mt-6 lg:max-w-[50%] '>
-              <img src="Group-12.png" alt="" />
+              <img className='w-[10%]' src="Group-12.png" alt="" />
               <div>
                 <h2 className='text-2xl font-bold'>Enfermeiros de Excelência</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, totam.</p>
@@ -29,7 +29,7 @@ export default function About2() {
             </div>
 
             <div className='bg-white flex gap-4 items-center px-6 py-4 rounded-xl mt-6 lg:max-w-[50%] '>
-              <img src="Group-12.png" alt="" />
+              <img className='w-[10%]' src="Group-12.png" alt="" />
               <div>
                 <h2 className='text-2xl font-bold'>Enfermeiros de Excelência</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, totam.</p>
