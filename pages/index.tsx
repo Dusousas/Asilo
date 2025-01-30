@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Mission from "@/components/Mission";
 import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <Mission />
       <Galery />
+      <Testimonials />
     </>
   );
 }
