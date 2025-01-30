@@ -8,7 +8,7 @@ export default function Contact() {
 
 
                     <div className='bg-BlueP w-full py-32 flex justify-center lg:w-[85%] lg:rounded-l-full '>
-                        <form className='lg:w-1/2 px-20 py-10' action="">
+                        <form className='py-10  px-[2%] lg:w-1/2 lg:px-20 ' action="">
                             <span className='text-white font-semibold text-[24px]'>Fale Conosco</span>
                             <h1 className='text-white font-semibold text-[35px]' >Tire suas dúvidas</h1>
                             <p className='mb-6 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae totam porro deserunt saepe natus quibusdam earum culpa at distinctio!</p>
