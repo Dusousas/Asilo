@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
-// Importando os módulos corretamente
 
 export default function Testimonials() {
     const testimonials = [
@@ -19,7 +18,7 @@ export default function Testimonials() {
             name: 'Maria Silva',
             text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, maiores. Quasi, cumque?',
             image: 'perfil1.png',
-            stars: [1, 2, 3, 4],
+            stars: [1, 2, 3, 4, 5],
         },
         {
             name: 'José Almeida',
@@ -48,13 +47,13 @@ export default function Testimonials() {
                         {/* Swiper de Depoimentos */}
                         <Swiper
                             autoplay={{
-                                delay: 1000,  // Transição automática a cada 3 segundos
-                                disableOnInteraction: false,  // A navegação automática continua mesmo após interação
+                                delay: 1000, // Atraso de 3 segundos para transição automática
+                                disableOnInteraction: false, // Continua o autoplay mesmo após interação
                             }}
-                          
-                            loop={true}  // Faz o loop infinito
-                            slidesPerView={1}  // Exibe um depoimento por vez
-                            spaceBetween={10}  // Espaço entre os slides
+                            loop={true} // Loop infinito
+                            slidesPerView={1} // Exibe um depoimento por vez
+                            spaceBetween={10} // Espaço entre os slides
+                            speed={500} // Duração da transição
                         >
                             {testimonials.map((testimonial, index) => (
                                 <SwiperSlide key={index}>
