@@ -7,10 +7,9 @@ export default function Header() {
         <>
             <LineH />
             <header className='py-5'>
-                <div className='maxW flex justify-between'>
+                <div className='maxW flex justify-between items-center'>
                     <div className='flex flex-col text-center'>
-                        <a className='uppercase font-bold text-xl/5 text-RedP' href="">Missono</a>
-                        <a className='uppercase font-bold text-lg/5 text-RedP' href="">Casa de Repouso</a>
+                        <a href="/"><img className='w-[160px]' src="logo.png" alt="" /></a>
                     </div>
                     <Navbar />
                 </div>

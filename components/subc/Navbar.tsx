@@ -9,10 +9,10 @@ export default function Navbar() {
             {/* Navbar Desktop */}
             <nav className="hidden lg:block">
                 <ul className="flex gap-6 text-lg uppercase font-semibold text-BlueP">
-                    <a href=""><li>Início</li></a>
-                    <a href=""><li>Sobre</li></a>
-                    <a href=""><li>Serviços</li></a>
-                    <a href=""><li>Contato</li></a>
+                    <a href="#home"><li>Início</li></a>
+                    <a href="#about"><li>Sobre</li></a>
+                    <a href="#services"><li>Serviços</li></a>
+                    <a href="#contact"><li>Contato</li></a>
                 </ul>
             </nav>
 
@@ -29,10 +29,10 @@ export default function Navbar() {
                 {/* Menu Mobile */}
                 <nav className={`${isOpen ? "block" : "hidden"} absolute left-0 top-[150px] w-full bg-white shadow-md z-50 py-8`}>
                     <ul className="flex flex-col items-center gap-8 py-8 text-lg uppercase font-semibold text-BlueP">
-                        <a href=""><li>Início</li></a>
-                        <a href=""><li>Sobre</li></a>
-                        <a href=""><li>Serviços</li></a>
-                        <a href=""><li>Contato</li></a>
+                        <a href="#home"><li>Início</li></a>
+                        <a href="#about"><li>Sobre</li></a>
+                        <a href="#services"><li>Serviços</li></a>
+                        <a href="#contact"><li>Contato</li></a>
                     </ul>
                 </nav>
             </div>

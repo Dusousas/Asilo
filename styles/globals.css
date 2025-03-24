@@ -11,6 +11,10 @@ body {
   font-family: "Quicksand", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .maxW {
   max-width: 1520px;
   margin: 0 auto;

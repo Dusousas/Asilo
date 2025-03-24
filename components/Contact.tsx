@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
     return (
         <>
-            <section className='pb-20'>
+            <section id='contact' className='pb-20'>
                 <div className='flex justify-end'>
 
 
@@ -11,7 +11,7 @@ export default function Contact() {
                         <form className='py-10 px-[2%] lg:w-1/2 lg:px-20 ' action="">
                             <span className='text-white font-semibold text-[24px]'>Fale Conosco</span>
                             <h1 className='text-white font-semibold text-[35px]' >Tire suas dúvidas</h1>
-                            <p className='mb-6 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae totam porro deserunt saepe natus quibusdam earum culpa at distinctio!</p>
+                            <p className='mb-6 text-white'>Estamos aqui para cuidar de quem você ama. Preencha o formulário abaixo e entre em contato conosco para mais informações.</p>
                             <div className='flex flex-col gap-4'>
                                 <input placeholder='Nome completo' className='outline-none py-4 px-4 w-full' type="text" />
                                 <input placeholder='Seu Telefone' className='outline-none py-4 px-4 w-full' type="text" />
