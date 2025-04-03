@@ -1,4 +1,5 @@
 import React from 'react';
+
 const services = [
     {
         id: 1,
@@ -38,17 +39,18 @@ const services = [
     }
 ];
 
-
 export default function CardService() {
     return (
-        <article className='flex flex-col gap-6 maxW items-center justify-center lg:flex-row flex-wrap'>
+        <article className='flex flex-col gap-6 max-w-full items-center flex-wrap justify-center lg:flex-row'>
             {services.map(service => (
-                <div key={service.id} className='border-RedP border py-10 w-full flex flex-col justify-center items-center rounded-2xl hover:bg-white lg:w-[25%] h-[250px]'>
-                    <div>
-                        <img className='w-[80%]' src={service.image} alt={service.title} />
+                <div key={service.id} className='border-RedP border py-10 w-full flex flex-col justify-between items-center rounded-2xl hover:bg-white lg:w-[30%] h-[300px]'>
+                    
+                    {/* Imagens todas alinhadas */}
+                    <div className='flex justify-center items-center h-[100px]'>
+                        <img className='w-auto max-w-[45%]' src={service.image} alt={service.title} />
                     </div>
-                    <h1 className='font-bold text-xl text-center mt-2'>{service.title}</h1>
-                    <p className='text-center px-12 mt-3'>{service.description}</p>
+                    <h1 className='font-bold text-xl text-center mt-4'>{service.title}</h1>
+                    <p className='text-center px-8 mt-3'>{service.description}</p>
                 </div>
             ))}
         </article>

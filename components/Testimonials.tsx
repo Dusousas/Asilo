@@ -9,20 +9,20 @@ import 'swiper/css/autoplay';
 export default function Testimonials() {
     const testimonials = [
         {
-            name: 'Paulo Santos',
-            text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sit ab fugiat exercitationem vero repellendus debitis nihil ullam provident ex?',
+            name: 'Lucimar',
+            text: "Existem momentos em que, apesar de todos os esforços e tentativas para cuidar de nossos idosos, percebemos que não conseguimos mais dar conta sozinhos. Nessas horas, buscar ajuda profissional se torna essencial. A Casa de Repouso Missono tem sido de grande auxílio para nosso pai, pois o carinho e a dedicação com que ele é tratado são genuínos. Além disso, as atividades de fisioterapia e entretenimento proporcionam a ele momentos de alegria e bem-estar. Podemos dizer que estamos tranquilos em confiar nos cuidados da Natália Missono e de sua equipe. Nossa gratidão é imensa!",
             image: 'perfil1.png',
             stars: [1, 2, 3, 4, 5],
         },
         {
-            name: 'Maria Silva',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, maiores. Quasi, cumque?',
+            name: 'Ana Clara Souza',
+            text: 'Ver minha mãe bem cuidada e feliz faz toda a diferença. A equipe é atenciosa e dedicada, sempre proporcionando conforto e carinho. Somos muito gratos!',
             image: 'perfil1.png',
             stars: [1, 2, 3, 4, 5],
         },
         {
-            name: 'José Almeida',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vero?',
+            name: 'Guilherme Banzato',
+            text: 'Ambiente acolhedor, profissionais atenciosos e dedicados. Uma experiência confiável e tranquila.',
             image: 'perfil1.png',
             stars: [1, 2, 3, 4, 5],
         },
@@ -44,16 +44,16 @@ export default function Testimonials() {
                     <div className='w-full bg-RedP py-20 px-10 rounded-r-2xl lg:w-1/2'>
                         <h1 className='text-white font-semibold text-[35px]'>Depoimentos</h1>
 
-                        {/* Swiper de Depoimentos */}
+        
                         <Swiper
                             autoplay={{
-                                delay: 1000, // Atraso de 3 segundos para transição automática
-                                disableOnInteraction: false, // Continua o autoplay mesmo após interação
+                                delay: 1000,
+                                disableOnInteraction: false,
                             }}
-                            loop={true} // Loop infinito
-                            slidesPerView={1} // Exibe um depoimento por vez
-                            spaceBetween={10} // Espaço entre os slides
-                            speed={500} // Duração da transição
+                            loop={true}
+                            slidesPerView={1} 
+                            spaceBetween={10} 
+                            speed={500}
                         >
                             {testimonials.map((testimonial, index) => (
                                 <SwiperSlide key={index}>

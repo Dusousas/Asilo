@@ -46,12 +46,12 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(193, 255, 248, 1));
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(123, 185, 172, 0.6));
 }
 
 .missionBG {
   position: relative;
-  background-image: url('/missaoBG.png');
+  background-image: url('/missaoBG.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -61,7 +61,27 @@ h1 {
   position: absolute;
   inset: 0;
   background: rgba(1, 88, 128, 0.5);
+}
 
+.slider1{
+  background-image: url('/slide/Main1.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 80vh;
+}
+
+.slider2{
+  background-image: url('/slide/Main2.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 80vh;
+}
+
+.slider3{
+  background-image: url('/slide/Main3.jpg');
+  background-position: top;
+  background-size: cover;
+  height: 80vh;
 }
 
 

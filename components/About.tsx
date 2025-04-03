@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import About2 from './subc/About2';
 
 export default function About() {
@@ -9,23 +8,19 @@ export default function About() {
                 <div className='maxW flex flex-col-reverse gap-y-6 items-center lg:flex-row'>
 
                     <article className='relative flex justify-center lg:w-1/2'>
-                    <Image 
+                    <img
                             className='absolute hidden right-[75px] top-[-50px] lg:block' 
                             src="/unnamed-file.png" 
                             alt="Imagem ilustrativa" 
                             width={30} 
                             height={500} 
-                            priority
-                            quality={85}
                         />
-                        <Image 
+                        <img
                             className='rounded-t-xl rounded-b-xl w-[500px] h-[600px] object-cover' 
                             src="/g8-1.webp" 
                             alt="Imagem sobre nós" 
                             width={500} 
                             height={600}
-                            quality={85}
-                            priority
                         />
                     </article>
 

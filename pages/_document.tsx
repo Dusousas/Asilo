@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head>
         <title>Missono - Casa de Repouso</title>
-        
+
         {/* Meta Tags Essenciais */}
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -32,8 +32,8 @@ export default function Document() {
         {/* Ícones */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
 
         {/* FONTES */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
