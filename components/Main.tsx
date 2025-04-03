@@ -1,58 +1,70 @@
-import React from 'react';
-import Cardsmain from './subc/Cardsmain';
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import { EffectFade, Navigation } from 'swiper/modules';
+import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import Slide1 from './subc/Slide1';
+import Slide2 from './subc/Slide2';
+import Slide3 from './subc/Slide3';
+
 
 export default function Main() {
-    return (
-        <>
-            <section className='py-20'>
-                <div className='maxW flex flex-col lg:flex-row gap-6 lg:items-center'>
+  // Referência para o Swiper
+  const swiperRef = useRef<any>(null);
 
-                    <article className='w-full lg:w-1/2'>
-                        <h1 className='font-bold text-3xl text-center lg:text-left'>
-                            Oferecemos serviço de enfermagem 24 horas por dia, 7 dias por semana para sua família
-                        </h1>
-                        <p className='mt-4 text-center lg:text-left'>
-                            Com um cuidado personalizado e uma abordagem humanizada, nossa equipe está sempre à disposição 
-                            para proporcionar o máximo de conforto e segurança, assegurando que seus entes queridos recebam 
-                            a melhor assistência, seja em momentos de rotina ou em situações especiais que exigem cuidados 
-                            médicos mais intensivos.
-                        </p>
+  // Funções para navegação
+  const handlePrev = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slidePrev(); // Navegar para o slide anterior
+    }
+  };
 
-                        <div className='flex justify-center mt-6 lg:justify-start'>
-                            <a className='text-RedP uppercase font-semibold border py-2 px-4 rounded-lg border-RedP' href="#services">
-                                Saiba mais
-                            </a>
-                        </div>
-                    </article>
+  const handleNext = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideNext(); // Navegar para o próximo slide
+    }
+  };
 
-                    <article className='flex mt-10 justify-center items-center flex-col gap-6 lg:w-1/2 lg:flex-row relative'>
-                        <img className='absolute hidden top-[30px] left-[400px] lg:block' 
-                            src="/unnamed-file.png" 
-                            alt="Imagem decorativa" 
-                            width={50} 
-                            height={20} 
-                           />
+  return (
+    <section className="">
+      <div>
+        <Swiper
+          ref={swiperRef} // Referência adicionada ao Swiper
+          effect="fade"
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          modules={[EffectFade, Navigation]}
+        >
+          <SwiperSlide>
+            <Slide1 />
+          </SwiperSlide>
+          <SwiperSlide>
+          <Slide2 />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slide3 />
+          </SwiperSlide>
+        </Swiper>
 
-                        <img className='rounded-t-full rounded-l-full max-w-[60%] lg:max-w-[40%] lg:mb-28' 
-                            src="/s1.webp" 
-                            alt="Imagem de enfermagem" 
-                            width={400} 
-                            height={400} 
-                           />
-
-                        <img className='rounded-b-full rounded-r-full max-w-[60%] lg:max-w-[40%] lg:mt-28' 
-                            src="/sh1.webp" 
-                            alt="Imagem de cuidados médicos" 
-                            width={400} 
-                            height={400} 
-                           />
-                    </article>
-                </div>
-                
-                <div className='mt-20'>
-                    <Cardsmain />
-                </div>
-            </section>
-        </>
-    );
+        {/* Setas de navegação conectadas ao Swiper */}
+        <article className="flex items-center justify-end gap-2 relative bottom-[100px] z-10 maxW">
+          <div
+            className="custom-prev border rounded-full hover:bg-white hover:border-none cursor-pointer"
+            onClick={handlePrev} // Ao clicar, navega para o slide anterior
+          >
+            <MdOutlineKeyboardArrowLeft className="text-4xl text-white hover:text-black" />
+          </div>
+          <div
+            className="custom-next border rounded-full hover:bg-white hover:border-none cursor-pointer"
+            onClick={handleNext} // Ao clicar, navega para o próximo slide
+          >
+            <MdOutlineKeyboardArrowRight className="text-4xl text-white hover:text-black" />
+          </div>
+        </article>
+      </div>
+    </section>
+  );
 }
